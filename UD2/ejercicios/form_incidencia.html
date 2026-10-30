@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de incidencia</title>
+</head>
+<body>
+    <h1>Formulario de incidencia</h1>
+
+    <form action="incidencia.php" method="get">
+
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            <p>
+                <label for="usuario">Usuario que remite la incidencia:</label>
+                <input type="text" id="usuario" name="usuario" size="40"
+                       placeholder="Introduzca Nombre y Apellidos">
+            </p>
+            <p>
+                Tipo de usuario:
+                <input type="radio" id="alumno" name="tipo_usuario" value="alumno" checked>
+                <label for="alumno">Alumno</label>
+                <input type="radio" id="profesor" name="tipo_usuario" value="profesor">
+                <label for="profesor">Profesor</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dónde se produce</legend>
+            <p>
+                Lugar:
+                <input type="radio" id="lugar_dep" name="lugar" value="departamento">
+                <label for="lugar_dep">Todo el departamento</label>
+                <input type="radio" id="lugar_aula" name="lugar" value="aula">
+                <label for="lugar_aula">Todo el aula</label>
+                <input type="radio" id="lugar_equipo" name="lugar" value="equipo" checked>
+                <label for="lugar_equipo">Sólo en un equipo</label>
+            </p>
+            <p>
+                <label for="ubicacion">Nombre del departamento, número de aula o nombre del equipo:</label>
+                <input type="text" id="ubicacion" name="ubicacion" size="30">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información sobre la incidencia</legend>
+            <p>
+                Nivel de urgencia:
+                <input type="radio" id="urg_alto" name="urgencia" value="alto">
+                <label for="urg_alto">Alto</label>
+                <input type="radio" id="urg_medio" name="urgencia" value="medio">
+                <label for="urg_medio">Medio</label>
+                <input type="radio" id="urg_bajo" name="urgencia" value="bajo" checked>
+                <label for="urg_bajo">Bajo</label>
+            </p>
+            <p>
+                <label for="descripcion">Descripción de la incidencia:</label><br>
+                <textarea id="descripcion" name="descripcion" rows="6" cols="50"
+                          placeholder="Describa con el mayor detalle posible qué ocurre, cuándo empezó y qué estaba haciendo."></textarea>
+            </p>
+            <p>
+                <input type="checkbox" id="aviso" name="aviso" value="si">
+                <label for="aviso">Deseo recibir un correo electrónico cuando se resuelva la incidencia</label>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Entrar">
+            <input type="reset" value="Limpiar">
+        </p>
+    </form>
+</body>
+</html>
