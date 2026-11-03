@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de habitación</title>
+</head>
+<body>
+    <h1>Reserva de habitación</h1>
+    <form action="reserva.php" method="get">
+
+        <h2>Datos del solicitante</h2>
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" maxlength="100" size="30" required autofocus>
+        </p>
+        <p>
+            <label for="tel">Teléfono:</label>
+            <input type="tel" id="tel" name="tel" maxlength="9" size="12"
+                   pattern="[0-9]{9}" placeholder="9 números" title="9 números" required>
+        </p>
+
+        <h2>Datos de la reserva</h2>
+        <p>
+            <label for="habitacion">Habitación:</label>
+            <select id="habitacion" name="habitacion">
+                <option value="azul" selected>Azul</option>
+                <option value="verde">Verde</option>
+                <option value="amarilla">Amarilla</option>
+                <option value="morada">Morada</option>
+            </select>
+        </p>
+        <p>
+            <label for="tipo">Tipo de reserva:</label>
+            <select id="tipo" name="tipo">
+                <option value="individual">Individual</option>
+                <option value="doble" selected>Doble</option>
+            </select>
+        </p>
+        <p>
+            <label for="provincia">Provincia:</label>
+            <select id="provincia" name="provincia">
+                <optgroup label="Galicia">
+                    <option value="C">La Coruña</option>
+                    <option value="L">Lugo</option>
+                    <option value="O">Orense</option>
+                    <option value="P">Pontevedra</option>
+                </optgroup>
+                <optgroup label="País Vasco">
+                    <option value="V">Vizcaya</option>
+                    <option value="G">Guipúzcoa</option>
+                    <option value="A">Álava</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="dni">Copia del DNI:</label>
+            <input type="file" id="dni" name="dni" required>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </p>
+    </form>
+</body>
+</html>
