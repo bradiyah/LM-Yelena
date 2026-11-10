@@ -1,0 +1,55 @@
+
+    /* Todos los elementos de la pagina */
+    body {
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Todos los parrafos y tablas de la pagina */
+    p, table {
+      color: #555;
+      border: 1px solid blue;
+    }
+
+    /* Todos los párrafos contenidos en #primero */
+    #primero p {
+      color: red;
+    }
+
+    /* Todos los p cuyo precedente sea otro p */
+    p p{
+      text-align: right; 
+    }
+
+    /* Todos los enlaces de la pagina */
+    a[href] {
+      color: green;
+    }
+
+    /* Todos los enlaces que son hijos directos de div */
+    div > a {
+      color: lightblue;
+    }
+
+    /* Los elementos <em> contenidos en #primero */
+   #primero em {
+      color: #0000BB;
+      background-color: #FFFFCC;
+    }
+
+    /* Todos los elementos <em> con la clase "especial" en toda la pagina */
+    em.especial{
+      color: #FFFF00;
+      background: #000000;
+    }
+
+    /* Todos los elementos <span> contenidos en la clase "normal" */
+    span.normal{
+      font-weight: bold;
+    }
+
+    /* Todos los div contenidos en cualquier elemento que descienda de body */
+    body div{
+      text-decoration: underline;
+    };
+
