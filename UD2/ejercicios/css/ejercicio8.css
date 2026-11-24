@@ -1,0 +1,18 @@
+li:first-child {
+  color: aqua;
+}
+
+li:nth-child(even) {
+  color: red;
+  font-size: medium;
+}
+
+li:nth-child(3) {
+  color: yellow;
+  font-size: small;
+}
+
+li:last-child {
+  color: rgb(0, 255, 0);
+  font-size: x-large;
+}
