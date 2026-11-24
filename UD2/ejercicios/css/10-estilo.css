@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+AU+SA+Guides&display=swap");
+
+@font-face {
+  font-family: "MiFuente";
+  src: url("../fonts/AgravePro-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 700; /* porque es una fuente variable */
+}
+
+.introduction {
+  font-family: "Playwrite AU SA Guides", "Comic Sans MS", cursive;
+}
+
+
+.origins {
+  font-family: "Courier New", Courier, monospace;
+}

@@ -1,3 +1,7 @@
+li {
+  font-family: "Playwrite AU SA Guides", cursive;
+}
+
 li:first-child {
   color: aqua;
 }
