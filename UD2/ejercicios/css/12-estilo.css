@@ -1,0 +1,11 @@
+#primero {
+  text-shadow: 2px 2px 5px rgb(22, 21, 21), -1px -1px green; 
+}
+
+#segundo {
+  text-shadow: 2px 2px 5px rgb(29, 28, 27), -1px -1px rgb(209, 35, 35), 1px 1px rgb(37, 34, 34);
+}
+
+#tercero {
+  text-shadow: 2px 2px 5px rgb(28, 155, 197), -1px -1px rgb(209, 35, 35), 1px 1px rgb(37, 34, 34);
+}
